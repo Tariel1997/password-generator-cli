@@ -17,20 +17,31 @@ A simple, secure command-line tool for generating random passwords based on user
 ## Requirements
 
 * Python 3.x
-* No external libraries are required to run the main script.
-* `pytest` is required to run the tests (see [Running Tests](#running-tests)).
+* Core development and test dependencies are installed via `requirements.txt`:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+* No external libraries are required to run the main script; tests use `pytest` (already included in `requirements.txt`).
 
 ## How to Use
 
 1.  Ensure you have Python 3 installed.
-2.  Save the main script as `password_generator.py`.
-3.  Run the script from your terminal:
+2.  (Recommended) Install dependencies from `requirements.txt`:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  Save the main script as `password_generator.py`.
+4.  Run the script from your terminal:
 
     ```bash
     python password_generator.py
     ```
 
-4.  Follow the on-screen prompts to configure your password:
+5.  Follow the on-screen prompts to configure your password:
 
     ```
     --- Python Password Generator (CLI) ---
@@ -51,10 +62,10 @@ A simple, secure command-line tool for generating random passwords based on user
 
 This project includes a test suite using `pytest` to verify the generator's functionality.
 
-1.  Install `pytest` if you don't have it:
+1.  Install dependencies (includes `pytest`):
 
     ```bash
-    pip install pytest
+    pip install -r requirements.txt
     ```
 
 2.  Save the test code as `test_password_generator.py` in the same directory as `password_generator.py`.
